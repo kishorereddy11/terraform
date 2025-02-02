@@ -13,6 +13,14 @@ resource "aws_instance" "expense" {
   })
 }
 
+resource "aws_instance" "name" {
+  tags = {
+    Name= "a",
+    d="d"
+  }
+}
+
+
 resource "aws_security_group" "sg" {
   name = "frontend_sg"
   egress {
